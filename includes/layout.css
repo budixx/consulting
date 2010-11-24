@@ -1,0 +1,261 @@
+/**************************************
+GENERAL
+
+**************************************/
+
+body, h1, h2, h3, h4, h5, h6, img, abbr, strong, ul, p, table, td, tr, input, select, form, label { margin: 0; padding: 0; }
+
+table{ border-collapse:collapse;border-spacing:0; }
+
+input, select, textarea { border: none; font: 11px Verdana; color: #222; }
+	
+img {
+	border: none;
+	behavior: url(js/iepngfix.htc) ;
+	}
+
+a { text-decoration: none; }
+a:focus { outline: none; }
+.underline { text-decoration: underline; }
+
+.ft-left { float: left; }
+.ft-right { float: right; }
+.clear { clear: both; }
+.block { display: block; }
+.relative { position: relative; }
+
+.mr-left { margin-left: 20px; }
+.mr-top { margin-top: 10px; }
+.mr-top2 { margin-top: 20px; }
+.mr-top3 { margin-top: 5px; }
+.mr-right { margin-right: 10px; }
+.mr-side { margin: 10px 0 10px; }
+
+@font-face {
+    font-family: "Corbel";
+    src: url(fonts/Corbel.ttf);
+}
+
+/*FONT*/
+p  { font:12px Verdana; color: #3d3d3d; line-height: 20px; }
+h2 { font: 22px Tahoma,Helvetica; color: #262525; text-transform: uppercase; }
+h5 { font: 12px Verdana; color: #7f7e7e; text-transform: uppercase; }
+h6 { font: 9px Verdana; color: #779e3b; }
+
+/*COLOR*/
+.black { color: #333 !important; font-weight: bold; }
+
+
+img.bg {
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 1024px;
+	
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+	
+	/* Set up positioning */
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+@media screen and (max-width: 1024px){
+	img.bg {
+		left: 50%;
+		margin-left: -512px; }
+}
+
+body {
+	/* These rules have no effect on the functionality */
+	/* They are for styling only */
+	margin: 0;
+	padding: 20px 0 0 0;
+}
+	
+/**************************************
+HEADER
+
+**************************************/
+div#header {
+	/* This is the only important rule */
+	/* We need our content to show up on top of the background */
+	position: relative; 
+	
+	/* These have no effect on the functionality */
+	margin-top: 50px;
+	height: 161px;
+	width: 100%;
+	background: #FFF;
+	border-top: 1px dashed #aeaaa1;
+	}
+	div#header .head-inside {
+		position: relative;
+		width: 900px;
+		margin: 0 auto;
+		height: 162px;
+		}
+		.logo {
+			display: block;
+			position: absolute;
+			top: 20px;
+			left: 0px;
+			width: 258px;
+			height: 134px;
+			background: url(../images/logo.png) no-repeat;
+			}
+/**************************************
+NAVIGASTION
+
+**************************************/	
+.navigasi {
+	position: absolute;
+	top: 72px;
+	right: 0px;
+	width: 380px;
+	height: 40px;
+	}
+	.navigasi a {
+		font: 18px "Corbel"; color: #6d9e20;
+		}
+	a .profile, a .service, a .client, a .contact {
+		display: block;
+		width: 90px;
+		height: 40px;
+		float: left;
+		text-align: center;
+		}
+		a .profile:hover, body.profile a .profile, a .service:hover, body.service a .service,
+		a .client:hover, body.client a .client, a .contact:hover, body.contact a .contact
+		{
+			color: #507614;
+			background: url(../images/arrow.gif) center bottom no-repeat;
+			}
+
+
+/**************************************
+CONTENT
+
+**************************************/	
+
+div#content {
+	/* This is the only important rule */
+	/* We need our content to show up on top of the background */
+	position: relative; 
+	
+	
+	/* These have no effect on the functionality */
+	width: 100%;
+	background: url(../images/bg-content.png);
+	border-bottom: 1px dashed #aeaaa1;
+	}
+	
+	/**PROFILE**/
+	div#content .con-profile-inside{
+		width: 620px;
+		margin: 0 auto;
+		padding: 50px 210px 50px 70px;
+		}
+	
+	/**CLIENT**/
+	div#content .con-client-inside{
+		width: 620px;
+		margin: 0 auto;
+		padding: 50px 210px 50px 70px;
+		}
+		ul.point-client {
+			float: left;
+			width: 280px;
+			}
+			.point-client li {
+				list-style-image: url(../images/point.png);
+				font: 12px Verdana; color: #3d3d3d;
+				line-height: 32px;
+				list-style-position: inside;
+				}			
+		table.tabs {
+			margin-top: 10px;
+			}
+			.tabs td {
+				padding: 2px 8px 2px 0;
+				font:12px Verdana; color: #3d3d3d; 
+				}
+	
+	/**SERVICE**/
+	div#content .con-service-inside{
+		width: 620px;
+		margin: 0 auto;
+		padding: 50px 210px 50px 70px;
+		}
+		div#content .con-service-inside p.fg {
+			padding: 3px 0 0 28px;
+			}
+		.number-one {
+			float: left;
+			width: 21px;
+			height: 22px;
+			background: url(../images/number-site.png) left 0 no-repeat;
+			}
+		.number-two {
+			float: left;
+			width: 21px;
+			height: 22px;
+			background: url(../images/number-site.png) left -35px no-repeat;
+			}
+		.number-three {
+			float: left;
+			width: 21px;
+			height: 22px;
+			background: url(../images/number-site.png) left -72px no-repeat;
+			}	
+		.number-four {
+			float: left;
+			width: 21px;
+			height: 22px;
+			background: url(../images/number-site.png) left -108px no-repeat;
+			}
+		.number-five {
+			float: left;
+			width: 21px;
+			height: 22px;
+			background: url(../images/number-site.png) left -143px no-repeat;
+			}	
+/**************************************
+FOOTER
+
+**************************************/	
+div#footer {
+	/* This is the only important rule */
+	/* We need our content to show up on top of the background */
+	position: relative; 
+	
+	/* These have no effect on the functionality */
+	margin-top: 150px;
+	height: 106px;
+	width: 100%;
+	background: #f2df2a;
+	border-top: 8px solid #b5d87e;
+	}
+	div#footer .foot-inside {
+		position: relative;
+		width: 900px;
+		height: 106px;
+		margin: 0 auto;
+		}
+		.copyright {
+			position: absolute;
+			top: 45px;
+			left: 0px;
+			color: #3d3d3d;
+			font: 11px Verdana;
+			}
+		.xtra {
+			display: block;
+			position: absolute;
+			top: 40px;
+			right: 0px;
+			width: 117px;
+			height: 24px;
+			background: url(../images/xtra.gif) no-repeat;
+			}
